@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .card {
+    margin-top: 1000px;
+  }
+  
+  .card-header {
+    background-color: #dd0f0f;
+    color: #f3f1f1;
+  }
+  
+  .btn-primary {
+    background-color:#dd0f0f;
+    border-color: #dd0f0f;
+  }
+  
+  .btn-primary:hover {
+    background-color:#dd0f0f;
+    border-color: #ca0a0a;
+  }
+  #checkbookForm {
+    width: 80%; /* Ajusta el valor según tus necesidades */
+}
+/* Establecer la imagen de fondo */
+body {
+  background-image: url('https://www.dzoom.org.es/wp-content/uploads/2023/02/fotos-fondo-negro-magnetismo-elegancia-lobo-portada-810x540.jpg');
+  background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen *</
+  /* Otros estilos personalizados para el contenido de la página */
+}
