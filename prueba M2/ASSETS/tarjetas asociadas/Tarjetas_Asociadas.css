@@ -1,0 +1,29 @@
+body {
+    background-image: url('https://previews.123rf.com/images/mbgraphicdesign/mbgraphicdesign2306/mbgraphicdesign230600772/206806647-paisaje-m%C3%A1gico-fondo-de-pantalla-de-anime.jpg');
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen *</
+    /* Otros estilos personalizados para el contenido de la página */
+  }
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #df53b0;
+   
+  }
+  
+  .list-group-item {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
