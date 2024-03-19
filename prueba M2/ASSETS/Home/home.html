@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chequera Electrónica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!-------------------------------Menu desplegable----------------------------->
+    <nav class="menu">
+        <section class="menu__container">
+            <h4 class="menu__logo">____Bienvenido a tu Chequera Electrónica .</h4>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="/ASSETS/Home/home.html" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Mi Cuenta<img src="arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="/ASSETS/Datos personales/Datos_Personales.html" class="menu__link menu__link--inside">Datos Personales</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/ASSETS/tarjetas asociadas/Tarjetas_Asociadas.html" class="menu__link menu__link--inside">Tarjetas asociadas</a>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="https://wa.me/+56976109904" class="menu__link">Contactanos</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>
+    <!-------------------------------Fin Menu desplegable----------------------------->
+    <!-------------------------------Home----------------------------->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card rounded-lg shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Chequera Electrónica</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="checkbookForm">
+                            <div class="form-group">
+                                <label for="accountNumber">Número de cuenta a depositar</label>
+                                <input type="text" id="accountNumber" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="banco">Banco:</label>
+                                <select class="form-select" id="banco" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="de Chile">Banco de chile</option>
+                                    <option value="Estado">Banco Estado</option>
+                                    <option value="Bci">Bci</option>
+                                    <option value="Scotiabank">Scotiabank</option>
+                                    <!-- Agrega más opciones de bancos aquí -->
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipo-cuenta">Tipo de Cuenta:</label>
+                                <select class="form-select" id="tipo-cuenta" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="Corriente">Corriente</option>
+                                    <option value="Vista">Vista</option>
+                                    <!-- Agrega más opciones de cuentas aquí -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="amount">Monto</label>
+                                <input type="number" id="amount" class="form-control" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Emitir depósito</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------Fin Home----------------------------->
+        <!-------------------------------Depositos----------------------------->
+    <div class="container2">
+        <h1 class="text-center-mb-4">Saldo Bancario</h1>
+        <div class="card saldo-card">
+        <div class="card-body">
+            <h2 class="card-title saldo-title">Saldo Actual:</h2>
+            <p id="saldo" class="card-text saldo-amount">$5,000.00</p>
+        </div>
+        <div class="card-body">
+            <!-- Formulario para agregar dinero -->
+            <form id="addMoneyForm">
+                <div class="form-group">
+                    <label for="addAmount">Agregar dinero</label>
+                    <input type="number" id="addAmount" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Cuadro de saldo actual -->
+<div class="row justify-content-center mt-4">
+<div class="col-md-6">
+    <div class="card rounded-lg shadow">
+    </div>
+</div>
+</div>
+</div>
+        </div>
+        <div class="card cuenta-card mt-4">
+          <div class="card-body">
+            <h2 class="card-title cuenta-title">Datos de mi Cuenta Personal:</h2>
+            <p id="numeroCuenta" class="card-text">Número de Cuenta: 89237812738 </p>
+            <p id="tipoCuenta" class="card-text">Tipo de Cuenta: Corriente</p>
+          </div>
+        </div>
+      </div>
+          <!-------------------------------Fin Depositos----------------------------->
+          <div class="transaction-list"></div>
+</body>
+<script src="home.js"></script>
+</html>
+
+
